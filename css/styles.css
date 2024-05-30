@@ -508,6 +508,7 @@ table {
   flex-flow: row wrap;
   width: min(92%, var(--width-grid-max));
   margin: 0 auto;
+
 }
 
 .row .row {
@@ -5483,6 +5484,7 @@ ol {
 .gallery__warp {
 	max-width: 1570px;
 	margin: 0 auto;
+  margin-top: 10% !important;
 }
 
 .gallery__item {
@@ -5907,4 +5909,14 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	height: 110px;
 	resize: none;
 	margin-bottom: 50px;
+}
+
+.gallery__page img {
+    width: 200px; /* Set a consistent width */
+    height: 300px; /* Set a consistent height */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+.galleryBody {
+  background-color: var(--color-2-dark);
 }
