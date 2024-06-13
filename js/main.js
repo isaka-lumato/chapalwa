@@ -384,3 +384,17 @@
     })();
 
 })(document.documentElement);
+
+
+const toShow = document.querySelector('.showOnClick');
+const buttonShow = document.querySelector('.btnShow');
+
+buttonShow.onclick = () => {
+    toShow.classList.toggle('showIt');
+    if (toShow.classList.contains('showIt')) {
+        buttonShow.innerHTML = "Hide"
+    }
+    else {
+        buttonShow.innerHTML = "Show more"
+    }
+}
